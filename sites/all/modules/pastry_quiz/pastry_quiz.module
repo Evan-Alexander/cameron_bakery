@@ -40,19 +40,19 @@ function pastry_quiz_menu() {
 
 function first_form() {
     $form['gluten'] = array(
-    '#title' => 'Gluten Intollerance',
-    '#type' => 'radios',
-    '#description' => t('Are you gluten intollerant?'),
-    '#options' => array(
-      t('Yes'),
-      t('No'),
-    ),
-    '#required' => TRUE,
+        '#title' => 'Gluten Intollerance',
+        '#type' => 'radios',
+        '#description' => t('Are you gluten intollerant?'),
+        '#options' => array(
+            t('Yes'),
+            t('No'),
+        ),
+        '#required' => TRUE,
     );
 
     $form['submit'] = array(
-          '#type' => 'submit',
-          '#value' => 'submit',
+        '#type' => 'submit',
+        '#value' => 'submit',
     );
     return $form;
 }
@@ -63,8 +63,8 @@ function second_form() {
         '#type' => 'radios',
         '#description' => t('Choose your desired size.'),
         '#options' => array(
-          t('Large'),
-          t('Small'),
+            t('Large'),
+            t('Small'),
         ),
         '#required' => TRUE,
     );
@@ -83,15 +83,15 @@ function third_form() {
         '#type' => 'radios',
         '#description' => t('Choose your desired flavor.'),
         '#options' => array(
-          t('Chocolate'),
-          t('Fruit'),
+            t('Chocolate'),
+            t('Fruit'),
         ),
         '#required' => TRUE,
     );
 
     $form['submit'] = array(
-          '#type' => 'submit',
-          '#value' => 'submit',
+        '#type' => 'submit',
+        '#value' => 'submit',
     );
 
     return $form;
